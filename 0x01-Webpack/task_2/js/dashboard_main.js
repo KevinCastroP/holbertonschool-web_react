@@ -1,6 +1,6 @@
 const $ = require("jquery");
 const _ = require("lodash");
-import "./body.css";
+import "../css/main.css";
 
 let count = 0;
 
@@ -17,6 +17,9 @@ const $button = $("<button>Click here to get started</button>").on(
   })
 );
 
+$("body").append("<div id='logo'></div>");
+$("body").append("<p>Holberton Dashboard</p>");
 $("body").append("<p>Dashboard data for the students</p>");
 $("body").append($button);
 $("body").append("<p id='count'></p>");
+$("body").append("<p>Copyright - Holberton School</p>");
